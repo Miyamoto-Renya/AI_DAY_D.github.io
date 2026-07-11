@@ -26,7 +26,7 @@ export default function Hero({ onScrollToPrograms }: HeroProps) {
           transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.1 }}
           className="w-16 h-16 flex items-center justify-center mb-6"
         >
-          <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain" />
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

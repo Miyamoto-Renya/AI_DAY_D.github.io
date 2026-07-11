@@ -16,7 +16,7 @@ export default function Footer({ onScrollToSection }: FooterProps) {
           <div className="flex flex-col items-start">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 flex items-center justify-center text-[#121212]">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain" />
               </div>
               <span className="font-display font-black tracking-tight text-lg text-[#FBFBF9] uppercase">
                 {BOOTH_SUMMARY.title}

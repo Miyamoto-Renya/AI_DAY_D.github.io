@@ -21,7 +21,7 @@ export default function Header({ onScrollToSection }: HeaderProps) {
           id="btn-logo"
         >
           <div className="w-8 h-8 flex items-center justify-center">
-            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <span className="font-display font-black tracking-tight text-lg text-[#121212] block leading-none truncate max-w-[200px] sm:max-w-[300px]">
