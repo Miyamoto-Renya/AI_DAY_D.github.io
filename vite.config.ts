@@ -1,11 +1,11 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/AI_DAY_D/',
+    base: '/AI_DAY_D.github.io/',  // 리포지토리 이름 전체 포함
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
