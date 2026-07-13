@@ -137,7 +137,7 @@ export default function ProgramShowcase() {
                 </div>
 
                 {/* Overview paragraph */}
-                <p className="text-sm text-[#121212]/80 leading-relaxed font-sans mb-6">
+                <p className="text-sm text-[#121212]/80 leading-relaxed font-sans mb-6 whitespace-pre-line">
                   {selectedProgram.description}
                 </p>
 
@@ -168,7 +168,7 @@ export default function ProgramShowcase() {
                           <h5 className="text-xs font-bold text-[#121212] leading-none mb-1">
                             {step.title}
                           </h5>
-                          <p className="text-[11px] text-[#121212]/70 leading-relaxed font-sans">
+                          <p className="text-[11px] text-[#121212]/70 leading-relaxed font-sans whitespace-pre-line">
                             {step.description}
                           </p>
                         </div>
@@ -198,7 +198,7 @@ function MobileProgramDetail({ program }: { program: AIProgram }) {
   return (
     <div className="space-y-5 text-[#121212]">
       {/* Overview Paragraph */}
-      <p className="text-xs text-[#121212]/85 leading-relaxed font-sans border-b border-[#121212]/10 pb-4">
+      <p className="text-xs text-[#121212]/85 leading-relaxed font-sans border-b border-[#121212]/10 pb-4 whitespace-pre-line">
         {program.description}
       </p>
 
@@ -225,7 +225,7 @@ function MobileProgramDetail({ program }: { program: AIProgram }) {
                 <h5 className="text-xs font-bold leading-none mb-1 text-[#121212]">
                   {step.title}
                 </h5>
-                <p className="text-[11px] text-[#121212]/75 leading-relaxed font-sans">
+                <p className="text-[11px] text-[#121212]/75 leading-relaxed font-sans whitespace-pre-line">
                   {step.description}
                 </p>
               </div>

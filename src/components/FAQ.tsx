@@ -76,7 +76,7 @@ export default function FAQ() {
                           <span className="font-mono text-xs font-bold text-emerald-600 shrink-0 mt-0.5">
                             {UI_TEXT.faq.answer_badge}
                           </span>
-                          <p className="text-xs sm:text-sm text-[#121212]/75 leading-relaxed font-sans">
+                          <p className="text-xs sm:text-sm text-[#121212]/75 leading-relaxed font-sans whitespace-pre-line">
                             {faq.answer}
                           </p>
                         </div>

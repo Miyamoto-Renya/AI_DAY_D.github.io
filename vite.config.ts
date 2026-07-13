@@ -5,7 +5,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/AI_DAY_D.github.io/',  // 리포지토리 이름 전체 포함
+    base: '/AI_DAY_D.github.io/',  // 리포지토리 이름 전체 (점 포함)  // 리포지토리 이름 전체 포함
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

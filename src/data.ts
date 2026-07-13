@@ -16,7 +16,7 @@ export const UI_TEXT = {
     label_fee: "COST",
     status_msg: "부스 관람 상태 :",
     status_val: "대기",
-    privacy_msg: "개인 생체 정보 수집",
+    privacy_msg: "개인 정보 유출 안함",
   },
   stats: {
     badge_prefix: "핵심 요소들",
@@ -29,8 +29,8 @@ export const UI_TEXT = {
     module_badge: "Active Module",
     privacy_title: "데이터 프라이버시 (Data Privacy)",
     privacy_desc: "체험 종료 즉시 보관 서버 및 현장 데이터 완전 영구 파기",
-    step_title: "실시간 참여 가이드 (STEP-BY-STEP)",
-    highlight_title: "체험 하이라이트 & 팁",
+    step_title: "실시간 참여 가이드",
+    highlight_title: "체험 하이라이트",
     tech_title: "SYSTEM STACK:",
   },
   faq: {
@@ -69,7 +69,7 @@ export const UI_TEXT = {
 export const BOOTH_SUMMARY = {
   title: "AI SWAT BOOTH",
   subtitle: "이 부스가 짱임",
-  intro: "국내의 다루는 사람이 적은 뉴럴 셀룰러 오토마타라는 딥러닝 기술을 주력으로 이용한 실험적인 부스입니다. AI를 동적으로 다루고 체험할 수 있습니다. AI 감정 맞추기 게임 등 4개의 전문적인 체험을 해볼 수 있습니다. ",
+  intro: "백석고등학교 디지털데이 코딩 동아리 부스입니다. AI와 관련된 동적인 체험을 할 수 있습니다.",
   location: "인천 백석고등학교 3번 부스",
   hours: "이번주 수요일~디지털데이 끝날 때까지",
   entryFee: "늑대거북이"
@@ -78,10 +78,10 @@ export const BOOTH_SUMMARY = {
 export const AI_PROGRAMS: AIProgram[] = [
   {
     id: "NCA Facial expression recognition",
-    title: "NCA Facial expression recognition",
-    subtitle: "인공지능의 시선으로 재탄생하는 나의 감정",
-    category: "Vision & NCA",
-    description: "관람객의 얼굴 구조와 고유한 감정표현을 인공지능이 인식한 뒤, 고유의 패턴을 생성합니다.",
+    title: "Facial Expressions Game",
+    subtitle: "화면에 맞춰 표정을 바꾸고 점수를 얻으세요!",
+    category: "Vision & CA & Euclidean Distance",
+    description: "관람객의 얼굴을 CNN + 8차원의 유클리디안 거리(국소적으로 커스텀)을 이용해 감정을 분류합니다. 다가오는 레이어에 맞춰 표정을 바꿔서 점수를 올릴 수 있습니다. 기술 자랑 맞아요.",
     steps: [
       {
         number: 1,
@@ -90,18 +90,18 @@ export const AI_PROGRAMS: AIProgram[] = [
       },
       {
         number: 2,
-        title: "네오픽셀 LED",
-        description: "곧이어 긴 Led 네오픽셀에 불이 들어옵니다."
+        title: "게임 시작",
+        description: "촬영이 완료되면, 우주 왕복선이 앞으로 나아갑니다. 고개를 흔들고, 다가오는 레이어에 맞춰 표정을 바꿔 점수를 얻어보셈."
       },
       {
         number: 3,
-        title: "감탄의 향연",
-        description: "NCA의 내부 구조를 화면으로 확인 후, 개쩌는 기술에 감탄합니다."
+        title: "못생긴 표정",
+        description: "찌그러진 자신의 표정을 감상하며 나아갑니다."
       },
       {
         number: 4,
-        title: "모바일 고해상도 소장",
-        description: "깜짝놀란 표정을 네오픽셀의 색깔 패턴과 함께 사진을 찍어드립니다."
+        title: "감탄의 향연",
+        description: "아름다운 우주와 많은 간식을 보고 놀랍니다."
       }
     ],
     iconName: "Camera",
@@ -111,30 +111,30 @@ export const AI_PROGRAMS: AIProgram[] = [
   },
   {
     id: "soundscape-composer",
-    title: "AI Sound by StanbyME",
-    subtitle: "세상에 단 하나뿐인 사운드",
-    category: "Sound making & buzzer",
-    description: "최애 음악을 입력하면 버저로 내보내",
+    title: "AI RHYTHM by StanbyME",
+    subtitle: "AI가 비트를 짜는 리듬게임",
+    category: "Sound & StanbyME ",
+    description: "AI가 램덤으로 박자 노드를 생성합니다. 사용자는 리듬에 맞추어 슬래시와 노드를 터치해 점수를 얻습니다. 다만, 너무 완벽하게는 하지마세요! 콤보가 20번이 넘으면 특별한 이벤트가 생길지도 모르니깐요?",
     steps: [
       {
         number: 1,
-        title: "원하는 음악 업로드",
-        description: "유튜브에서 원하는 음악을 고릅니다. (노래, asmr, 영화 OST 다가능)"
+        title: "게임 스타트",
+        description: "스타트 버튼을 누릅니다."
       },
       {
         number: 2,
-        title: "시그니처 FFT 알고리즘",
-        description: "FFT 분석을 통해 음악을 버저가 해석하기에 최적의 상태로 내보냅니다."
+        title: "AI의 노드 비트 생성",
+        description: "AI가 생성한 비트에 맞춰 화면을 터치합니다."
       },
       {
         number: 3,
-        title: "mosi mosi 오디오 조작",
-        description: "그렇게 내보낸 데이터를 버저가 해석합니다."
+        title: "리더보드 1등 도전",
+        description: "당신이 박자를 좀 치거나 반응 속도가 페이커를 능가한다면, 1등을 노려서 많은 간식을 받아가세요."
       },
       {
         number: 4,
-        title: "오디오 감상 및 소장",
-        description: "생성된 완벽한 사운드를 감상하며 사운드 음원 다운로드 링크를 수령합니다."
+        title: "기립박수의 향연",
+        description: "당신은 격한 감동을 받았습니다...."
       }
     ],
     iconName: "Music",
@@ -144,30 +144,30 @@ export const AI_PROGRAMS: AIProgram[] = [
   },
   {
     id: "dream-palette",
-    title: "AI Hand SUPER",
-    subtitle: "손 끝에서 우아한 아트로",
+    title: "Kakashi & Friday Night",
+    subtitle: "친구와 함께 손 끝에서 나오는 흑염룡을 체험해보세요!",
     category: "CLICK & Media Art",
-    description: "당신이 어젯밤 꾸었던 모호한 꿈, 혹은 간직하고픈 가장 소중했던 기억의 스토리를 자유롭게 타이핑해 주세요. 자연어 감성 분석 레이어가 텍스트 속 문맥적 서사를 정밀하게 파싱하여, 추상적인 빛과 오가닉 형태의 거대 미디어 아트를 전시 벽면에 실시간 투사합니다.",
+    description: "개지리는 손 동작으로 조금 이상해진 프나펑을 클리어해보세요. 잊지마세요. CNN(AI)가 항상 당신을 추적 중이거든요! 친구와 합을 맞춰야 한다는 거. 혹시 모르죠? 여기서 도술을 익힐지도!",
     steps: [
       {
         number: 1,
-        title: "그냥 화면 클릭",
-        description: "화면에 있는 이미지 아무 곳이나를 클릭합니다."
+        title: "튜토리얼",
+        description: "안내원의 설명을 듣고 손 동작을 익힙니다."
       },
       {
         number: 2,
-        title: "NCA 우려먹기",
-        description: "하이 테크놀로지 NCA가 그 이미지를 손상 시키고 복구하는 과정을 반복합니다."
+        title: "본게임",
+        description: "친구와 함께 자리에 서요. 그리고 미친 듯이 쏟아지는 손동작들을 맞추어 점수를 얻어요."
       },
       {
         number: 3,
-        title: "사진 찍기",
-        description: "당신은 그 패턴에 매우 놀라며 사진을 찍습니다."
+        title: "신기록 달성",
+        description: "높은 기록을 달성하면 간식이 쏟아지고 동경의 눈빛을 받아요."
       },
       {
         number: 4,
-        title: "기립 박수",
-        description: "당신은 그저 전율할 뿐입니다."
+        title: "몽키몽키한 환호의 향연",
+        description: "당신은 그저 많은 간식에 놀라며 원숭이처럼 날뛸 뿐입니다."
       }
     ],
     iconName: "Palette",
@@ -177,30 +177,30 @@ export const AI_PROGRAMS: AIProgram[] = [
   },
   {
     id: "interactive-silhouette",
-    title: "AI BODY MOVE",
-    subtitle: "손짓과 몸짓 끝에서 살아 숨 쉬는 인터랙티브한 동작 게임",
+    title: "BUZZER THE RHYTHM GAME",
+    subtitle: "미친듯이 긴 머리를 휘날리며 버튼을 쳐보세요.",
     category: "Vision & Real-time Tracking",
-    description: "인공지능이 포즈를 분석해서 옆에 버츄얼 졸라맨을 띄웁니다.",
+    description: "수동부저랑 택트스위치를 이용해서 AI 랜덤한 타이밍에 버튼을 치도록 신호를 줍니다. 집중하셔야해요. 기회는 총 5번 주어집니다! 5번의 기회가 소진됬다며느 평균값이 나와서 내 반응속도가 어느정도인지 알려드립니다.",
     steps: [
       {
         number: 1,
-        title: "체험 안착 가이드 정렬",
-        description: "웹캠의 골격 탐지를 기다립니다."
+        title: "체험 안착 가이드",
+        description: "안내원의 안내에 따라 자리에 착석합니다. 숙련된 조교의 시범을 봅니다."
       },
       {
         number: 2,
-        title: "실시간 관절 스켈레톤 리깅",
-        description: "모니터 상에서 내 관절 부위를 조밀하게 감싼 미세 앵커 핀들이 물리를 동반해 연결되는 반응형 모션을 즐깁니다."
+        title: "거만한 자세로",
+        description: "숙련된 조교를 비웃으며 대결을 신청합니다."
       },
       {
         number: 3,
-        title: "내가 바로 버츄얼",
-        description: "옆 화면에 졸라맨이된 자신이 서 있습니다."
+        title: "뀨",
+        description: "이정도 박자는 당신에게 애교입니다."
       },
       {
         number: 4,
-        title: "베스트 모션 컷 저장",
-        description: "자연과 내 그림자가 완벽히 어우러지는 최고의 찰나를 저희가 포착하여 안전하게 메롱합니다."
+        title: "물개박수 짝짝짝의 향연",
+        description: "주변에 지켜보던 이성 학우 분들이 절대박자인 당신을 동경합니다."
       }
     ],
     iconName: "Sparkles",
@@ -214,19 +214,19 @@ export const BOOTH_STATS: BoothStats[] = [
   {
     label: "4대 테마",
     value: "전체 체험 규모",
-    description: "표정 인식, 작곡, 괴상한 몸짓하기, 인터랙티브 동작",
+    description: "표정 인식, 리듬 게임, 괴상한 몸짓하기, 박치게임",
     iconName: "LayoutGrid"
   },
   {
     label: "즐거운 웃음",
-    value: "그대가 내야할 것",
-    description: "제 조수인 데이비드의 안내와 모든 체험, 사진 촬영(무단)이 전부 무료입니다.",
+    value: "무조건 지켜야할 것",
+    description: "부스에서 재밌게 놀다가 가쇼.",
     iconName: "CheckCircle"
   },
   {
-    label: "결과물 개인 연락처로 바로 보내드림(번따x)",
-    value: "결과물 개인 소장",
-    description: "나만의 고품질 사진, 작곡된 미디어 음원, 가장 이상했던 동작 분석 리포트를 메일로 즉시 안전하게 전송 및 소장 가능",
+    label: "지금 네 생각은 반은 맞고 반은 틀려.",
+    value: "**여기서 중요한 한가지**",
+    description: "너무 신나서 고릴라처럼 날뛰어도되냐? 👉 그건 아님. \n흥이 돋아서 개다리 춤을쳐도 되냐? 👉 이건 성립함.\n\n원한다면, 한국 개다리 춤의 역사를 20페이지짜리 로맨스 소설로 만들어줄 수도 있어. 너의 개다리 춤.. **정말 깊다, 깊어.**",
     iconName: "Download"
   }
 ]

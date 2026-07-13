@@ -45,7 +45,7 @@ export default function Hero({ onScrollToPrograms }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-lg text-[#121212]/80 leading-relaxed max-w-2xl font-sans font-normal mb-8 border-l-2 border-[#121212] pl-4 sm:pl-6"
+              className="text-lg text-[#121212]/80 leading-relaxed max-w-2xl font-sans font-normal mb-8 border-l-2 border-[#121212] pl-4 sm:pl-6 whitespace-pre-line"
             >
               {BOOTH_SUMMARY.intro}
             </motion.p>

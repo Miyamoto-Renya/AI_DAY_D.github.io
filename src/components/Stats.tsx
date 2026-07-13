@@ -41,7 +41,7 @@ export default function Stats() {
                 <h5 className="text-xs font-mono font-bold tracking-wider text-[#121212] mb-1">
                   {stat.label}
                 </h5>
-                <p className="text-xs text-[#121212]/60 leading-relaxed font-sans">
+                <p className="text-xs text-[#121212]/60 leading-relaxed font-sans whitespace-pre-line">
                   {stat.description}
                 </p>
               </div>
